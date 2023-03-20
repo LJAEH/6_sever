@@ -31,11 +31,18 @@ public class ServletEx2 extends HttpServlet {
 		
 		System.out.println("주문 내용을 정상적으로 전달 받음");
 		
+		
+		
 		// 응답을 위해서 준비해야 할 것 
+		
 		// 1)문서 형식 + 문자 인코딩 지정 
 		resp.setContentType("text/html; charset=UTF-8");
+		
 		// 2) 응답을 위한 서버 => 클라이언트 스트림 얻어오기
 		PrintWriter out = resp.getWriter();
+		
+		// HTML 코드를 응답용 스트림을 이용해서 출력 => HTML 코드로 해석되서 보여짐 
+		// (HTML, CSS, JS 등 브라우저가 해석할 수있는 코드는 모두 해석되어 보여짐)
 		
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
