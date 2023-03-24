@@ -5,23 +5,27 @@ public class Member {
 	private int memberNo;
 	private String memberEmail;
 	private String memberPw;
-	private String memberNick;
+	private String memberNickname;
 	private String memberTel;
 	private String memberAddress;
+	private String profileImage;
 	private String enrollDate;
 	private String secessionFlag;
 	
-	public Member () {}
+	public Member() {
+		// TODO Auto-generated constructor stub
+	}
 
-	public Member(int memberNo, String memberEmail, String memberPw, String memberNick, String memberTel,
-			String memberAddress, String enrollDate, String secessionFlag) {
+	public Member(int memberNo, String memberEmail, String memberPw, String memberNickname, String memberTel,
+			String memberAddress, String profileImage, String enrollDate, String secessionFlag) {
 		super();
 		this.memberNo = memberNo;
 		this.memberEmail = memberEmail;
 		this.memberPw = memberPw;
-		this.memberNick = memberNick;
+		this.memberNickname = memberNickname;
 		this.memberTel = memberTel;
 		this.memberAddress = memberAddress;
+		this.profileImage = profileImage;
 		this.enrollDate = enrollDate;
 		this.secessionFlag = secessionFlag;
 	}
@@ -50,12 +54,12 @@ public class Member {
 		this.memberPw = memberPw;
 	}
 
-	public String getMemberNick() {
-		return memberNick;
+	public String getMemberNickname() {
+		return memberNickname;
 	}
 
-	public void setMemberNick(String memberNick) {
-		this.memberNick = memberNick;
+	public void setMemberNickname(String memberNickname) {
+		this.memberNickname = memberNickname;
 	}
 
 	public String getMemberTel() {
@@ -72,6 +76,14 @@ public class Member {
 
 	public void setMemberAddress(String memberAddress) {
 		this.memberAddress = memberAddress;
+	}
+
+	public String getProfileImage() {
+		return profileImage;
+	}
+
+	public void setProfileImage(String profileImage) {
+		this.profileImage = profileImage;
 	}
 
 	public String getEnrollDate() {
@@ -93,11 +105,10 @@ public class Member {
 	@Override
 	public String toString() {
 		return "Member [memberNo=" + memberNo + ", memberEmail=" + memberEmail + ", memberPw=" + memberPw
-				+ ", memberNick=" + memberNick + ", memberTel=" + memberTel + ", memberAddress=" + memberAddress
-				+ ", enrollDate=" + enrollDate + ", secessionFlag=" + secessionFlag + "]";
+				+ ", memberNickname=" + memberNickname + ", memberTel=" + memberTel + ", memberAddress=" + memberAddress
+				+ ", profileImage=" + profileImage + ", enrollDate=" + enrollDate + ", secessionFlag=" + secessionFlag
+				+ "]";
 	}
-	
-	
 	
 	
 }
